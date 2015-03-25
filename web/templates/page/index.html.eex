@@ -5,3 +5,6 @@
   <li>Render board for game in JavaScript via websockets</li>
   <li>Send game events to game over websockets</li>
 </ul>
+
+<script src="/js/phoenix.js"></script>
+<script src="/js/extris.js"></script>

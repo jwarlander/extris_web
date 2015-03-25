@@ -18,8 +18,7 @@ defmodule ExtrisWeb.Router do
     get "/", PageController, :index
   end
 
-  # Other scopes may use custom stacks.
-  # scope "/api", ExtrisWeb do
-  #   pipe_through :api
-  # end
+  socket "/ws", ExtrisWeb do
+    channel "extris:*", ExtrisChannel
+  end
 end
