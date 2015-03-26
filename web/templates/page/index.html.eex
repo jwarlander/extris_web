@@ -6,5 +6,8 @@
   <li>Send game events to game over websockets</li>
 </ul>
 
+<canvas id="canvas" width="500", height="600">
+</canvas>
+
 <script src="/js/phoenix.js"></script>
 <script src="/js/extris.js"></script>

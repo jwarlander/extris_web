@@ -19,6 +19,6 @@ defmodule ExtrisWeb.Router do
   end
 
   socket "/ws", ExtrisWeb do
-    channel "extris:*", ExtrisChannel
+    channel "extris", ExtrisChannel
   end
 end
