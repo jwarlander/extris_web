@@ -108,9 +108,9 @@ socket.join("extris", {}, function(channel){
     }
   }
 
-  window.onkeyup = function(e){
-    e.preventDefault();
+  function keyEventHandler(e){
     channel.send("game_event", {event: gameEventFor(e)});
-    return false;
   }
+
+  window.addEventListener("keydown", keyEventHandler, false);
 });
