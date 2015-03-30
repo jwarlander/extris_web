@@ -18,7 +18,7 @@ function drawBoard(context, board){
           case 0:
             break;
           default:
-            drawSquare(context, j, i, brushFor(shapeName(col)));
+            drawSquare(context, j+1, i, brushFor(shapeName(col)));
         }
       }
     }
@@ -29,12 +29,12 @@ function drawFrame(context, board){
   var brush = brushFor("board");
   var boardWidth = board[0].length;
   var boardHeight = board.length;
-  for(x = 0; x < boardWidth; x++){
+  for(x = 0; x < boardWidth + 2; x++){
     drawSquare(context, x, boardHeight, brush);
   }
   for(y = 0; y < boardHeight; y++){
     drawSquare(context, 0, y, brush);
-    drawSquare(context, boardWidth, y, brush);
+    drawSquare(context, boardWidth + 1, y, brush);
   }
 }
 
